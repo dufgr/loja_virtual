@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Loja Virtual</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>EBAC Shoes</h1>
+        <div class="hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Sobre a loja</a></li>
+            <li><a href="#">Produtos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="menu-mobile">
+      <div class="container">
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Sobre a loja</a></li>
+            <li><a href="#">Produtos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class="sobre">
+      <div class="container">
+        <img src="./Images/loja.jpg" alt="Foto da Loja" />
+        <div>
+          <h2>Sobre a loja</h2>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            ipsa, animi quidem consectetur error fugiat quos? Totam nam fugiat
+            aut commodi debitis ut corrupti, soluta blanditiis, nobis, error
+            quidem cum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="produtos">
+      <div class="container">
+        <h2>Produtos</h2>
+        <hr />
+        <div class="grade-produtos">
+          <article class="produto">
+            <a href="#">
+              <img
+                src="./Images/tenis-nike.webp"
+                alt="Tênis Nike Modelo XPTO"
+              />
+              <h3>Tênis Nike Modelo XPTO</h3>
+              <p>
+                Tênis Nike preto, disponível nos tamanhos 37,38, 39, 40 e 42
+              </p>
+            </a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+          <article class="produto">
+            <a href="#">
+              <img
+                src="./Images/tenis-adidas.avif"
+                alt="Tênis Adidas Modelo XPTO"
+              />
+              <h3>Tênis Adidas Modelo XPTO</h3>
+              <p>
+                Tênis Adidas preto, disponível nos tamanhos 37,38, 39, 40 e 42
+              </p>
+            </a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+          <article class="produto">
+            <a href="#">
+              <img
+                src="./Images/tenis-vans.webp"
+                alt="Tênis Vans Modelo XPTO"
+              />
+              <h3>Tênis Vans Modelo XPTO</h3>
+              <p>
+                Tênis Vans preto, disponível nos tamanhos 37,38, 39, 40 e 42
+              </p>
+            </a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+          <article class="produto">
+            <a href="#">
+              <img
+                src="./Images/tenis-vans-infantil.webp"
+                alt="Tênis Van
+              Infantil Modelo XPTO"
+              />
+              <h3>Tênis Van Infantil Modelo XPTO</h3>
+              <p>Tênis Adidas preto, disponível nos tamanhos 27,28, 29, e 30</p>
+            </a>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(() => {
+        $(".hamburguer").click(() => {
+          $(".menu-mobile").slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

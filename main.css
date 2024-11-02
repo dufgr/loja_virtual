@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #3868d6;
+}
+
+header h1 {
+  color: #fff;
+  font-style: italic;
+}
+
+header .hamburguer {
+  display: none;
+}
+
+header .container span {
+  width: 24px;
+  border: 1px solid #fff;
+}
+
+.menu ul {
+  display: flex;
+  gap: 16px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.menu-mobile {
+  display: none;
+  padding: 16px 0;
+  background-color: #5788fa;
+}
+
+.menu-mobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-mobile li {
+  text-align: center;
+}
+
+.sobre .container {
+  display: flex;
+  gap: 40px;
+}
+
+.sobre .container img {
+  width: 40%;
+}
+
+.sobre .container > div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  color: #3868d6;
+  font-style: italic;
+}
+
+hr {
+  border: 2px solid #3868d6;
+  margin: 10px 0 30px;
+}
+
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  column-gap: 3%;
+  row-gap: 5%;
+}
+
+.grade-produtos .produto img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.grade-produtos .produto a {
+  text-decoration: none;
+  color: #000;
+}
+
+.grade-produtos .produto a p {
+  margin: 16px 0;
+}
+
+.grade-produtos .produto button {
+  border: none;
+  border-radius: 3px;
+  background-color: #3868d6;
+  padding: 8px;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 90%;
+  }
+
+  header .hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  .sobre .container {
+    flex-direction: column;
+  }
+
+  .sobre .container img,
+  .sobre .container > div {
+    width: 100%;
+  }
+
+  .grade-produtos {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .sobre .container {
+    flex-direction: column;
+  }
+
+  .sobre .container img,
+  .sobre .container > div {
+    width: 100%;
+  }
+
+  .grade-produtos {
+    grid-template-columns: repeat(2, 47%);
+  }
+}
